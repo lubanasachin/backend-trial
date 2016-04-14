@@ -1,17 +1,17 @@
 <div id="envelope">
 	<header>
-	    <h2>SG LOGIN</h2>
+	    <h2>LTV REPORT</h2>
 	</header>
 	<hr>
 	<form action="" method="post">  
-		<label>Period</label>
+		<label>Period (months)</label>
 		<select ng-model="period">
-			<option>Select</option>
+			<option value='' selected='true'>Select</option>
 			<option value="3">3</option>
 			<option value="12">12</option>
 			<option value="18">18</option>
 		</select>
-		<label>Commission</label>
+		<label>Commission (%)</label>
 		<input type="text" name="commission" placeholder="commission" ng-model="commission">		
 		<input type="button" value="{{btnLabel}}" id="submit" ng-click="getLtvReport();" ng-disabled="isClicked">
 	</form>
