@@ -1,0 +1,43 @@
+<div id="envelope">
+	<header>
+	    <h2>SG LOGIN</h2>
+	</header>
+	<hr>
+	<form action="" method="post">  
+		<label>Period</label>
+		<select ng-model="period">
+			<option>Select</option>
+			<option value="3">3</option>
+			<option value="12">12</option>
+			<option value="18">18</option>
+		</select>
+		<label>Commission</label>
+		<input type="text" name="commission" placeholder="commission" ng-model="commission">		
+		<input type="button" value="{{btnLabel}}" id="submit" ng-click="getLtvReport();" ng-disabled="isClicked">
+	</form>
+</div>
+<table border="1">
+	<thead>
+		<tr>
+			<th>Month</th>
+			<th>Bookers</th>
+			<th>Tot Bookings</th>
+			<th>Booking (avg)</th>
+			<th>Turnover (euros)</th>
+			<th>Turnover (avg)</th>
+			<th>LTV</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="row in reportData">
+			<td>{{row.month}}</td>
+			<td>{{row.bookers}}</td>
+			<td>{{row.total_bookings}}</td>
+			<td>{{row.average_bookings}}</td>
+			<td>{{row.total_amount}}</td>
+			<td>{{row.average_amount}}</td>
+			<td>{{row.ltv}}</td>
+		</tr>
+	</tbody>
+</table>		
+
