@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:900|Dosis);
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body {margin:0;padding:0;font-family: 'Dosis', serif;  font-size: 14px;}
+div#envelope{width: 40%;margin: 10px 30% 10px 25%;float: left;border: 1px solid #ccc;border-radius:10px;} 	
+form{width:70%;margin:4% 15%;text-align: center;}  
+label {float: left;letter-spacing:1px;}
+h2 {height: 30px;margin: 10px 0 0 0;}
+header{float: left;background-color: #4180C5;text-align: center;height: 45px;width: 100%;border-radius: 10px 10px 0 0;color: aliceblue;} 
+select {height:35px;line-height: 35px;margin-bottom: 15px;margin-top: 10px;width:100%;border-radius:5px;border:1px solid #ccc;}
+input[type=text]{height:35px;line-height: 35px;margin-bottom: 15px;margin-top: 10px;width:100%;text-indent: 10px;border-radius:5px;border:1px solid #ccc;}
+input[type=button]{padding: 10px;border-radius:5px;border: none;background-color: #4180C5;color: aliceblue;cursor:pointer;letter-spacing: 1px;text-transform: uppercase;}
+input[type=button]:disabled{background:#333;}
+input[type=text]:focus {border-color: #4697e4;}
+table {border:1px solid #ccc;border-collapse: collapse;width:95%;margin: 30px 0 10px 30px;}
+th {font-weight: bold;height: 40px;letter-spacing: 1px;text-transform:uppercase;}
+td {height: 40px;text-align: center;letter-spacing: 1px;}
